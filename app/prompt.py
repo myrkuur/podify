@@ -37,6 +37,7 @@ Core Responsibilities:
 1. Content Cleanup
 
 Remove duplicates: Identify and eliminate repeated sentences, phrases, or paragraphs
+Filter irrelevant content: Remove filler words, redundant explanations, off-topic tangents, and low-value contents
 Standardize formatting: Ensure consistent punctuation, capitalization, and spacing
 
 2. Logical Organization
@@ -56,6 +57,7 @@ Produce a well-structured document with clear paragraphs and logical flow
 Use appropriate headers or sections when beneficial
 Ensure professional tone and proper grammar
 Provide comprehensive coverage of the topic
+Only include parts that are related to topic
 
 Your output should only contain the cleaned, organized content.
 """

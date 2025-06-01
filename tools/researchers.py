@@ -9,9 +9,9 @@ from langchain_community.tools.semanticscholar.tool import SemanticScholarQueryR
 
 
 def web_searcher(
-    max_results=5,
+    max_results=3,
     time_range: Literal["day", "week", "month", "year"] = "year",
-    search_depth: Literal["basic", "advanced"] = "advanced",
+    search_depth: Literal["basic", "advanced"] = "basic",
 ):
     tavily = TavilySearch(
         max_results=max_results,
