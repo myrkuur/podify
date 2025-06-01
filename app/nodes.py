@@ -1,4 +1,4 @@
-from langchain.schema import SystemMessage
+from langchain.schema import SystemMessage, HumanMessage
 from langgraph.prebuilt import ToolNode
 
 from app import prompt
@@ -21,13 +21,13 @@ def retriever_node(state: RetrieverState):
 
 def organizer_node(state: OrganizerState):
     response = transcriber_llm.invoke(
-        [SystemMessage(content=prompt.ORGANIZER_PROMPT)] + state["researched_contents"]
+        [SystemMessage(content=prompt.ORGANIZER_PROMPT), HumanMessage(content=state["researched_contents"])]
     )
     return {"cleaned_content": response.content}
 
 
 def podcaster_node(state: OrganizerState):
     response = transcriber_llm.invoke(
-        [SystemMessage(content=prompt.PODCASTER_PROMPT)] + state["cleaned_content"]
+        [SystemMessage(content=prompt.PODCASTER_PROMPT), HumanMessage(content=state["cleaned_content"])]
     )
     return {"transcript": response.content}
