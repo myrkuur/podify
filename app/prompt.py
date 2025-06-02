@@ -75,7 +75,7 @@ Maintain intimacy: Use direct address and personal connection techniques that ma
 Hook creation: Develop compelling openings that immediately grab listener attention
 Momentum building: Create natural peaks and valleys in energy to maintain interest throughout
 Storytelling mastery: Weave facts and information into engaging personal narratives and vivid descriptions
-Listener involvement: Include rhetorical questions, thought experiments, and "imagine this" scenarios
+Listener involvement: Include rhetorical questions and thought experiments
 
 3. Single-Voice Dynamics
 
@@ -94,8 +94,9 @@ Revelation moments: Build up to surprising facts or "aha" moments
 
 Audio-Specific Solo Formatting:
 
-Natural speech patterns: Include realistic pauses, self-corrections, and conversational flow
-Emphasis markers: Use [PAUSE], [EXCITED], [WHISPER], [DRAMATIC] for vocal direction
+Natural speech patterns: Include realistic self-corrections, and conversational flow
+Emphasis markers: DO not include special markers like [PAUSE] and [RAIN SOUND]. Keep in mind you only write the transcript and not the audio.
+Your output should only contain the podcast text without special characters.
 
 Script Structure:
 

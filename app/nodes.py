@@ -11,7 +11,6 @@ RESEARCH_TOOLS_NODE = ToolNode(tools=RESEARCH_TOOLS_LIST)
 
 
 def retriever_node(state: RetrieverState):
-    print(state)
     topic = state.get("topic", state["messages"][0].content)
     response = retriever_llm_with_tools.invoke(
         [SystemMessage(content=prompt.EXPANDER_PROMPT)] + state["messages"]
