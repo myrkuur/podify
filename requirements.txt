@@ -17,3 +17,4 @@ openai==1.82.0
 uvicorn==0.34.3
 semanticscholar==0.10.0
 xmltodict==0.14.2
+wikipedia==1.4.0
