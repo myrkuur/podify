@@ -4,7 +4,6 @@ from app import tts_client as client
 
 
 def tts(text: str) -> str:
-    text = text[:100]
     """Converts a given text to realistic speech and returns the saved audio."""
     generator = client.text_to_speech.convert(
         voice_id="nPczCjzI2devNBz1zQrb",
