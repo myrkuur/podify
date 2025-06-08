@@ -29,7 +29,7 @@ Podify uses a sophisticated multi-stage pipeline built with LangGraph:
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - API keys for:
   - OpenAI (for LLM processing)
   - Anthropic (alternative LLM provider)
@@ -48,6 +48,11 @@ Podify uses a sophisticated multi-stage pipeline built with LangGraph:
 2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
+   ```
+   or alternatively you could use `uv`:
+   ```bash
+   pip install uv
+   uv sync
    ```
 
 3. **Set up environment variables**
@@ -76,7 +81,11 @@ Podify uses a sophisticated multi-stage pipeline built with LangGraph:
 
 5. **Start the server**
    ```bash
-   uvicorn app.main:app --reload --env-file .env
+   uvicorn app.main:app --env-file .env
+   ```
+   or (if you setup `uv`):
+   ```bash
+   uv run uvicorn app.main:app --env-file .env
    ```
 
 The API will be available at `http://localhost:8000`
