@@ -21,8 +21,14 @@ dependencies = [
     "langgraph-sdk==0.1.70",
     "langsmith==0.3.42",
     "openai==1.82.0",
+    "opik>=1.7.40",
     "semanticscholar==0.10.0",
     "uvicorn==0.34.3",
     "wikipedia==1.4.0",
     "xmltodict==0.14.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
 ]
